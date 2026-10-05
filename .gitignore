@@ -1,0 +1,29 @@
+# Allow-list: ignore everything, then opt specific files back in.
+# Secrets (.env.device, wifi.py, config.py) can never be committed by accident.
+/*
+!/.gitignore
+!/README.md
+!/docs/
+!/firmware/
+
+# Lua agent project
+!/my-gadget/
+/my-gadget/*
+!/my-gadget/src/
+!/my-gadget/package.json
+!/my-gadget/package-lock.json
+!/my-gadget/tsconfig.json
+!/my-gadget/lua.skill.yaml
+!/my-gadget/env.example
+!/my-gadget/.gitignore
+
+# Never, even if allowed above
+.env*
+!env.example
+wifi.py
+config.py
+config_backup.py
+device.env
+node_modules/
+__pycache__/
+*.bin

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.lua/
+.env
+.env.*
+!env.example
+.env.device
+device/wifi.py
+device/device.env
